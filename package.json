@@ -1,0 +1,22 @@
+{
+  "name": "@test/main",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "wuweiqi <wuweiqi@baidu.com>",
+  "homepage": "",
+  "license": "ISC",
+  "private": true,
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "build:rs": "rspack build",
+    "watch:rs": "rspack --watch"
+  },
+  "dependencies": {
+    "@rspack/cli": "^1.0.10",
+    "@rspack/core": "^1.0.10",
+    "swc-loader": "^0.2.6"
+  }
+}
