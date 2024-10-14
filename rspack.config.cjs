@@ -15,35 +15,35 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.ts$/,
-            //     exclude: /node_modules/,
-            //     use: [
-            //         {
-            //             loader: 'ts-loader',
-            //             options: {
-            //                 // 如果你想使用 Babel，可以启用这个选项
-            //                 // transpileOnly: true,
-            //             }
-            //         }
-            //     ],
-            // },
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'builtin:swc-loader',
+                        loader: 'ts-loader',
                         options: {
-                            jsc: {
-                                parser: {
-                                    syntax: 'typescript',
-                                },
-                            },
-                        },
+                            // 如果你想使用 Babel，可以启用这个选项
+                            // transpileOnly: true,
+                        }
                     }
                 ],
             },
+            // {
+            //     test: /\.ts$/,
+            //     exclude: /node_modules/,
+            //     use: [
+            //         {
+            //             loader: 'builtin:swc-loader',
+            //             options: {
+            //                 jsc: {
+            //                     parser: {
+            //                         syntax: 'typescript',
+            //                     },
+            //                 },
+            //             },
+            //         }
+            //     ],
+            // },
         ],
     },
 };

@@ -6,13 +6,12 @@ function foo() { }
 export function go() {
     foo()
 }
-
 export interface Foo {
     name: string
 }
 
 export type TFoo = string;
-var a=1
+var a = 1
 
 function functionByClass() {
     console.log(111)

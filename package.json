@@ -17,6 +17,7 @@
   "dependencies": {
     "@rspack/cli": "^1.0.10",
     "@rspack/core": "^1.0.10",
-    "swc-loader": "^0.2.6"
+    "swc-loader": "^0.2.6",
+    "ts-loader": "^9.5.1"
   }
 }
